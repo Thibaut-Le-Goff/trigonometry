@@ -34,11 +34,11 @@ int main() {
     printf("cos of %f deg : %f \n", number4, cos_deg);
 
     float min = 0.0;
-    float max = 6.283185;
+    //float max = 0.1;
     //float max = 3.14;
-    float precision = 0.01;
+    float max = 60.28;
 
-    float integral_test = integral(&min, &max, &precision);
+    float integral_test = integral(&min, &max);
     printf("integral_test : %f \n", integral_test);
 
     return 0;

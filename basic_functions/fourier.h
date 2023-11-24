@@ -1,6 +1,6 @@
 #ifndef FOURIER_H
 #define FOURIER_H
 
-float integral(float *min, float *max, float *precision);
+float integral(float *min, float *max);
 
 #endif
