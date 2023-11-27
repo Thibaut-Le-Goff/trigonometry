@@ -1,6 +1,9 @@
 #include <stdio.h>
-#include "basic_fun.h"
-#include "fourier.h"
+#include "../include/basic_functions/factorial.h"
+#include "../include/basic_functions/power.h"
+#include "../include/basic_functions/integral.h"
+#include "../include/trigonometry/sin.h"
+#include "../include/trigonometry/cos.h"
 
 int main() {
     float number0 = 5.0;
@@ -8,7 +11,7 @@ int main() {
     float factor1 = factorial_like(&number0);
     float factor2 = factorial_like(&number1);
 
-    float number2 = -1.0;
+    float number2 = -5.0;
     float number3 = 5.0;
     float power1 = pow_like(&number2, &number3);
     float power2 = pow_like(&number3, &number2);
@@ -33,10 +36,10 @@ int main() {
     printf("cos of %f rad : %f \n", number4, cos_rad);
     printf("cos of %f deg : %f \n", number4, cos_deg);
 
-    float min = 0.0;
+    float min = 40.57;
     //float max = 0.1;
     //float max = 3.14;
-    float max = 60.28;
+    float max = -90.3;
 
     float integral_test = integral(&min, &max);
     printf("integral_test : %f \n", integral_test);
