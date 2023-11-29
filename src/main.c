@@ -11,8 +11,8 @@ int main() {
     float factor1 = factorial_like(&number0);
     float factor2 = factorial_like(&number1);
 
-    float number2 = -5.0;
-    float number3 = 5.0;
+    float number2 = -5.3;
+    float number3 = 5.3;
     float power1 = pow_like(&number2, &number3);
     float power2 = pow_like(&number3, &number2);
 
@@ -42,7 +42,7 @@ int main() {
     float max = -90.3;
 
     float integral_test = integral(&min, &max);
-    printf("integral_test : %f \n", integral_test);
+    printf("integral of sin from %f to %f : %f \n", min, max, integral_test);
 
     return 0;
 }
